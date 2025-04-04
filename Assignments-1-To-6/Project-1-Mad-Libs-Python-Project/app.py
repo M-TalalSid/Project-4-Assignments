@@ -2,16 +2,16 @@ def get_superhero_inputs():
     """
     Collect inputs from the user for the superhero story.
     """
-    hero_alias = input("Enter a superhero alias (e.g., Batman, Wonder Woman): ")
-    hero_adjective = input("Enter an adjective to describe the hero (e.g., brave, clever): ")
-    city = input("Enter a city name (e.g., Gotham, Metropolis): ")
-    city_adjective = input("Enter an adjective to describe the city (e.g., dark, futuristic): ")
-    villain = input("Enter a villain's name (e.g., Joker, Lex Luthor): ")
-    power_source = input("Enter an object that gives the hero power (e.g., a magic ring, a spider bite): ")
-    action_verb = input("Enter an action verb (e.g., flies, runs): ")
-    villain_weapon = input("Enter the villain's weapon or tool (e.g., a freeze ray, a mind control device): ")
-    sound_effect = input("Enter a sound effect (e.g., Pow!, Bam!): ")
-    superpower = input("Enter a superpower (e.g., super strength, invisibility): ")
+    hero_alias = input("Enter A Superhero Alias (e.g., Batman, Wonder Woman): ")
+    hero_adjective = input("Enter An Adjective To Describe The Hero (e.g., brave, clever): ")
+    city = input("Enter A City Name (e.g., Gotham, Metropolis): ")
+    city_adjective = input("Enter An Adjective To Describe The City (e.g., dark, futuristic): ")
+    villain = input("Enter A Villain's Name (e.g., Joker, Lex Luthor): ")
+    power_source = input("Enter An Object That Gives The Hero Power (e.g., a magic ring, a spider bite): ")
+    action_verb = input("Enter An Action Verb (e.g., flies, runs): ")
+    villain_weapon = input("Enter The Villain's Weapon Or Tool (e.g., a freeze ray, a mind control device): ")
+    sound_effect = input("Enter A Sound Effect (e.g., Pow!, Bam!): ")
+    superpower = input("Enter A SuperPower (e.g., super strength, invisibility): ")
     return {
         "hero alias": hero_alias,
         "hero_adjective": hero_adjective,
@@ -32,11 +32,11 @@ def generate_superhero_story(inputs):
     story = f"""
     Once upon a time, in the {inputs['city_adjective']} city of {inputs['city']}, there lived a {inputs['hero_adjective']} hero known as {inputs['hero alias']}. One fateful day, after being exposed to {inputs['power_source']}, {inputs['hero alias']} discovered they had gained the power of {inputs['superpower']}!
 
-    Meanwhile, the notorious {inputs['villain']} was wreaking havoc in {inputs['city']} with their {inputs['villain_weapon']}. Determined to stop the chaos, {inputs['hero alias']} decided to confront {inputs['villain']}.
+    Meanwhile, the Notorious {inputs['villain']} was Wreaking Havoc in {inputs['city']} with their {inputs['villain_weapon']}. Determined to stop the Chaos, {inputs['hero alias']} decided to confront {inputs['villain']}.
 
-    Using their {inputs['superpower']}, {inputs['hero alias']} {inputs['action_verb']} towards {inputs['villain']}. The battle was intense, but with a mighty {inputs['sound_effect']}, {inputs['hero alias']} emerged victorious, saving {inputs['city']} from destruction.
+    Using their {inputs['superpower']}, {inputs['hero alias']} {inputs['action_verb']} towards {inputs['villain']}. The Battle was Intense, but with a Mighty {inputs['sound_effect']}, {inputs['hero alias']} Emerged Victorious, Saving {inputs['city']} from Destruction.
 
-    From that day forward, {inputs['hero alias']} became the guardian of {inputs['city']}, always ready to protect the city with their incredible {inputs['superpower']}.
+    From that day forward, {inputs['hero alias']} became the Guardian of {inputs['city']}, always ready to protect the city with their incredible {inputs['superpower']}.
 
     """
     return story
